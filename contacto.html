@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marcação - Clean's Car</title>
+  <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+  <div id="preloader">
+    <img src="LOGOTIPO PAP.png" alt="Logo Clean's Car" class="preloader-logo">
+    <div class="spinner"></div>
+  </div>
+  
+  </div>
+  <header>
+    <div class="header-container">
+      <img src="LOGOTIPO PAP.png" alt="LOGOTIPO" class="logo">
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="contacto.html" class="active">Marcação</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+
+  <main>
+    <section class="contacto">
+      <h1>Faça já a sua Marcação.</h1>
+      <p>Preencha o formulário abaixo e entraremos em contacto o mais breve possível.</p>
+
+      <form action="confirmacao.html" method="get" class="formulario">
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" name="nome" placeholder="Nome" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <label for="servico">Escolher Serviço:</label>
+          <select id="servico" name="servico" required>
+            <option value="">-- Selecione um serviço --</option>
+            <option value="Lavagem Exterior">Lavagem Exterior</option>
+            <option value="Lavagem Interior">Lavagem Interior</option>
+            <option value="Lavagem Completa">Lavagem Completa</option>
+          </select>
+        </div>
+
+<div class="form-group">
+  <label for="horario">Hora da Marcação:</label>
+  <input type="time" id="horario" name="horario" required min="08:00" max="19:00">
+</div>
+
+        <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+      </form>
+      
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; A sermos a melhor empresa de lavagem de carros em Portugal desde 2017.</p>
+    </div>
+  </footer>
+  <script>
+    window.addEventListener('load', function () {
+      document.body.classList.add('loaded');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clean's Car</title>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+  <div id="preloader">
+    <img src="LOGOTIPO PAP.png" alt="Logo Clean's Car" class="preloader-logo">
+    <div class="spinner"></div>
+  </div>
+  
+  </div>
+  <header>
+    <div class="header-container">
+      <img src="LOGOTIPO PAP.png" alt="LOGOTIPO" class="logo" >
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html" class="active">Início</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="contacto.html">Marcação</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+
+  <main>
+    <div class="slider">
+      <button class="nav left" onclick="anterior()">&#8249;</button>
+
+      <img src="sx_A06183000_anb_PROFILINEActifoamEnergy_E03_xx_2020-06-19.jpg" class="imagem-inicio" />
+
+      <div class="carro-info">
+        <h2 class="carro-nome" id="carro-nome"></h2>
+        <p id="carro-desc"></p>
+      </div>
+
+      <button class="nav right" onclick="proximo()">&#8250;</button>
+    </div>
+
+
+
+    <section class="reasons">
+      <h3>Porquê escolher a Clean's Car?</h3>
+      <div class="features">
+        <div class="feature-item">Lavagens eficazes e rápidas.</div>
+        <div class="feature-item">Estabelecimento de alta qualidade.</div>
+        <div class="feature-item">Avaliado como melhor empresa de lavagem de carros em Portugal por mais de 3000 pessoas. </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      document.body.classList.add('loaded');
+    });
+  </script>
+  
+  
+</body>
+<footer>
+  <div class="footer-container">
+    <p>&copy; A sermos a melhor empresa de lavagem de carros em Portugal desde 2017.</p>
+  </div>
+</footer>
+
+</html>

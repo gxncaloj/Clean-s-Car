@@ -1,0 +1,245 @@
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #196481, #62b0e4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.preloader-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+  animation: pulse 1.5s infinite;
+}
+
+.spinner {
+  border: 8px solid #62b0e4;
+  border-top: 8px solid #ffffff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+body.loaded #preloader {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s;
+}
+
+
+
+body {
+  font-family: 'Trebuchet MS';
+  background: linear-gradient(270deg, #196481, #62b0e4, #dfeaee);
+  background-size: 600% 600%;
+  animation: gradientBG 15s ease infinite;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #62b0e4;
+}
+
+.logo {
+  width: 75px;
+}
+nav {
+  background-color: #62b0e4;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #00bfff;
+  color: white;
+}
+.menu a.active {
+  background-color: #00bfff;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00bfff;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00aaff;
+  text-shadow: 0 0 5px #00aaff;
+}
+
+.contacto {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contacto h1, .contacto p {
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 5px rgba(0, 170, 255, 0.7);
+}
+.intro {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="time"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #e0f7fa;
+}
+
+textarea {
+  resize: none;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.formulario input, .formulario textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.formulario button {
+  padding: 10px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #0088cc;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.input-group i {
+  color: #00aaff;
+  font-size: 18px;
+}
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #4fb0d6;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  color: #333;
+  width: 100%;
+  max-width: 400px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #00bfff;
+  box-shadow: 0 0 8px #00bfff;
+}
+
+footer {
+  background-color: #196481;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}   
